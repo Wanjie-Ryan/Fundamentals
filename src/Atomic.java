@@ -43,3 +43,15 @@ public class Atomic {
     }
 
 }
+
+// ATOMIC VS SYNCHRONIZED
+// 1. Synchronized
+// locks entire method.
+// other threads must wait outside.
+// like a toilet with a lock - one person at a time.
+
+// 2. AtomicInteger
+// no lock needed
+// uses low level CPU instructions to do read+add+write atomically.
+// faster than synchronized
+// handles one transaction completely before accepting the next.
